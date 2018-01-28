@@ -1,0 +1,91 @@
+@font-face{
+	font-family: 'PatuaOne';
+	src: url(../fonts/PatuaOne-Regular.otf);	
+}
+@font-face{
+	font-family: 'Raleway';
+	src: url(../fonts/Raleway-Light.ttf);
+}
+/*header{
+	height:136px;
+	background: url(../img/bg-header.jpg);
+}*/
+
+#logo{
+	background-image: url(../img/logo.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	width: 189px;
+	height: 126px;
+}
+
+nav{
+	height: 39px;
+	background: #1b6ab1;
+}
+ul.menu {
+	margin: 0;
+	padding: 0;
+}
+
+ul.menu li {
+	list-style: none;
+	display: inline;
+	padding-left: 10px ;
+	padding-right: 10px;
+	line-height: 40px;
+}
+
+ul.menu li a{
+	text-decoration: none;
+	color: #fff;
+	font-family: 'PatuaOne';
+	font-size: 12px;
+}
+
+/*.banner{
+	background-image: url(../img/home-banner.jpg);
+	background-repeat: no-repeat;
+	width: auto;
+	height: auto;
+}*/
+
+img .banner {
+	width: 100%;
+	height: auto;
+}
+/*
+.detalle-empresa {
+	padding-top: 30px;
+	padding-right: 150px;
+	padding-left: 150px;
+*/
+}
+
+.detalle-empresa p{
+	font-family: 'Raleway';
+	font-size: 22px;
+	
+}
+
+.banner-azul{
+	height:289px;
+	background: url(../img/bg-body.jpg);
+	margin-top: 20px;
+	margin-bottom: 20px;
+	
+}
+.articulos {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.banner-azul img {
+	width: 515px;
+	height: auto;
+	margin-left: 300px;
+}
+
+footer {
+
+}
