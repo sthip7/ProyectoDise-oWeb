@@ -1,0 +1,260 @@
+@font-face{
+	font-family: 'PatuaOne';
+	src: url(../fonts/PatuaOne-Regular.otf);	
+}
+@font-face{
+	font-family: 'Raleway';
+	src: url(../fonts/Raleway-Light.ttf);
+}
+
+
+header{
+	height:136px;
+	background: url(../img/bg-header.jpg);
+}
+/*
+#logo{
+	background-image: url(../img/logo.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	width: 189px;
+	height: 126px;
+}
+*/
+
+.navbar{
+	position: relative;
+	background: #1b6ab1;
+	padding: 0 0 0 0px;
+	margin: 0 0 0 0px;
+	border: 1px solid transparent;
+	
+}
+.navbar-inverse{
+	background-color: #1b6ab1;
+}
+.navbar-inverse .navbar-nav li a{
+	color: #fff;
+}
+.navbar-header .navbar-brand{
+	color: #1b6ab1;
+}
+
+@media (max-width: 767px) {
+    .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
+        color: #fff;
+    }
+    .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:hover,
+    .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:focus {
+          color: #1b6ab1;
+    }
+
+}
+.navbar-custom .navbar-nav .dropdown-menu>li>a  { 
+  color: #1b6ab1;
+}
+
+.navbar-nav li a {
+	font-family: 'PatuaOne';
+	font-size: 12px;
+	padding-bottom: 15px;
+	padding-top: 15px;
+	padding-right: 5px;
+	padding-left: 5px;
+
+}
+
+.navbar-nav li {
+
+}
+/*
+ul.menu {
+	margin: 0;
+	padding: 0;
+}
+
+ul.menu li {
+	list-style: none;
+	display: inline;
+	padding-left: 10px ;
+	padding-right: 10px;
+	line-height: 40px;
+}
+*/
+
+
+img .banner {
+	width: 100%;
+	height: auto;
+}
+
+
+.intro {
+	font-family: 'Raleway';
+	font-size: 16px;
+	text-align: center;
+	padding-top: 10px;
+}
+
+.banner-azul{
+	height:289px;
+	background: url(../img/bg-body.jpg);
+	margin-top: 10px;
+	margin-bottom: 10px;
+	
+}
+.container .articulos {
+
+	margin-top: 20px;
+	margin-bottom: 20px;
+	text-align: center;
+
+}
+
+.articulos .col-lg-4 p {
+	font-family: 'Raleway';
+	font-size: 18px;
+  	margin-right: 10px;
+  	margin-left: 10px;
+
+}
+
+
+/*
+.banner-azul img {
+	width: 515px;
+	height: auto;
+	margin-left: 300px;
+}*/
+
+/*
+carusel
+*/
+.carousel {
+  margin-bottom: 60px;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 289px;
+  background-color: url(../img/bg-body.jpg);
+}
+.carousel-inner > .item > img {
+  position: center;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 289px;
+}
+
+.carousel-control.left {
+	background-image: none;
+	}
+.carousel-control.right {
+	right: 0;
+    left: auto;
+	background-image: none;
+	}
+
+.carousel-caption p {
+	text-align: center;
+	font-family: 'PatuaOne';
+	text-decoration: none;
+	font-size: 36px;
+}
+.carousel-caption span {
+	font-family: 'PatuaOne';
+	font-family: 100px;
+}
+
+footer {
+    height: 121px;
+    background: #333333;
+    font-family: 'Raleway';
+    color: #878787;
+    font-size: 12px;
+}
+
+footer p span {
+	font-size: 14px;
+	color: #65beec;
+}
+
+.uno{
+	padding-top: 10px;
+}
+.dos {
+	padding-top: 35px;
+}
+@media (min-width: 768px) and (max-width: 1100px){
+	.navbar li a{
+		font-family: 'PatuaOne';
+		font-size: 10px;
+		padding-bottom: 15px;
+		padding-top: 15px;
+		padding-right: 2px;
+		padding-left: 2px;
+	}
+}
+@media (max-width: 600px) {
+	.topnav a:not(:first-child) 
+	{
+		display: none;
+	}
+  footer {
+    height: 70px;
+    font-size: 7px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    line-height: 6px;
+  }
+  footer p span{
+  	font-size: 7px;
+  }
+  footer p {
+  	padding: 0 0 0px;
+  	margin: 0 0 2px;
+  }
+  .dos{
+  	padding-top: 15px;
+  	padding-bottom: 5px;
+  }
+  .carousel-caption p{
+  	font-size: 12px;
+  }
+  .banner-azul{
+  	align-items: center;
+  	height: 120px;
+  }
+  .articulos .col-lg-4 p{
+  	font-size: 9px;
+  }
+  .carousel-inner > .item > img{
+  	height: 110px;
+  }
+  .carousel .item {
+  	height: 120px;
+  }
+  .intro{
+  	font-size: 10px;
+  }
+  #logo{
+  	width: 129px;
+	height: 76px;
+  }
+  header{
+  	height:86px;
+  }
+  .navbar-nav li a{
+    	font-size: 10px;
+    	padding-bottom: 2px;
+		padding-top: 2px;
+		padding-right: 2px;
+		padding-left: 2px;
+		margin: 0 0 0 0px;
+    }
+}

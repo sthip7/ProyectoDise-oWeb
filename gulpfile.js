@@ -10,10 +10,11 @@ var gulp = require('gulp'),
   sass = require('gulp-sass'),
   wiredep = require('wiredep').stream,
   minifyCSS = require('gulp-minify-css'),
-  minifyHTML = require('gulp-minify-html');
+  minifyHTML = require('gulp-minify-html'),
+  imagemin = require('gulp-imagemin');
 
 /*
-Configuracion de la tarea 'Demo'
+Configuracion de tareas
 */
 gulp.task('js', function(){
     gulp.src('js/source/*.js')
@@ -32,12 +33,18 @@ gulp.task('sass', function(){
         //.pipe(minifyCSS())
         .pipe(gulp.dest('css/min/'))
 });
+gulp.task('imgmin', function(){
+    gulp.src('img/source/*')
+        .pipe(imagemin())
+        .pipe(gulp.dest('img/min/'))
+});
 gulp.task('html', function(){
     var opts = {comments:true, spare:true};
     gulp.src('index1.html')
         .pipe(minifyHTML(opts))
         .pipe(gulp.dest('dist/'))
 });
+
 gulp.task('wiredep', function () {
    gulp.src('./index.php')
      .pipe(wiredep({
@@ -60,6 +67,7 @@ gulp.task('connect-sync', function() {
   gulp.watch('**/*.php').on('change', function () {
     browserSync.reload();
   });
+  
 });
 
 gulp.task('watch', function(){
@@ -69,4 +77,4 @@ gulp.task('watch', function(){
     
 });
 
-gulp.task('default', ['connect-sync','watch']);
+gulp.task('default', ['watch']);
