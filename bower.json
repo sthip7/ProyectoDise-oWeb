@@ -1,0 +1,35 @@
+{
+  "name": "proyectodise-oweb",
+  "description": "ProyectoDiseñoWeb",
+  "main": "gulpfile.js",
+  "authors": [
+    "Josue Mendoza Pimentel"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/sthip7/ProyectoDise-oWeb",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "assets",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.3.1",
+    "bootstrap": "^3.3.7",
+    "bootstrap-sass": "^3.3.7",
+    "scrollmagic": "^2.0.5",
+    "jquery-ui": "jqueryui#^1.12.1",
+    "jcarousel": "^0.3.5",
+    "jquery.stellar": "stellar#^0.6.2"
+  },
+  "overrides": {
+    "bootstrap": {
+      "main": [
+        "dist/js/bootstrap.js",
+        "dist/css/bootstrap.css"
+      ]
+    }
+  }
+}
